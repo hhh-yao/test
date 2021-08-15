@@ -20,7 +20,60 @@ body {
 	line-height: 1.8;
 	background: #fff;
 	}
+	#test:hover .dropdown-content {
+		display: block;
+	  }
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		top: 45px;
+		background-color: #f9f9f9;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		padding: 12px 16px;
+	  }
+.change{
+	position: absolute;
+	top:15px;
+	left:900px;
+}
+input[type='checkbox'].switch{
+		outline: none;
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		position: relative;
+		width: 40px;
+		height: 20px;
+		background: #ccc;
+		border-radius: 10px;
+		transition: border-color .3s, background-color .3s;
+	}
 
+	input[type='checkbox'].switch::after {
+		content: '';
+		display: inline-block;
+		width: 1.7rem;
+		height:1.7rem;
+		border-radius: 50%;
+		background: #fff;
+		box-shadow: 0, 0, 2px, #999;
+		transition:.4s;
+		top: 2px;
+		position: absolute;
+		left: 2px;
+	}
+
+	input[type='checkbox'].switch:checked {
+		background: rgb(206, 119, 19);
+	}
+	/* 当input[type=checkbox]被选中时：伪元素显示下面样式 位置发生变化 */
+	input[type='checkbox'].switch:checked::after {
+		content: '';
+		position: absolute;
+		left: 55%;
+		top: 2px;
+	}
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
 	margin: 1.25em 0 .5em;
@@ -254,7 +307,8 @@ object {
 ----------------------------------------------- */
 .site-header {
 	padding: 20px 0 0;
-	background-image: url(https://cdn.jsdelivr.net/gh/hhh-yao/hhh-yao.github.io@1.7/人群.jpg);
+	background-image: url(https://cdn.jsdelivr.net/gh/hhh-yao/hhh-yao.github.io@2.0/网站2.png);
+	height: 600px;
 	}
 .site-branding {
 	float: left;
@@ -336,9 +390,12 @@ object {
 	clear: both;
 	padding: 20px 0 0;
 	}
-#main-navigation .sf-menu {
-	background: #060608;
-	}
+	#main-navigation .sf-menu {
+		position: absolute;
+		top: 15px;
+	  left: 500px;
+		background: #060608;
+		}
 #main-navigation .sf-menu > ul > li:after {
 	width: 1px;
 	float: left;
