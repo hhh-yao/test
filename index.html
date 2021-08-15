@@ -17,7 +17,7 @@
   <!-- PACE Progress Bar START -->
 
   
-  <title>Hexo</title>
+  <title>中日青年</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
@@ -57,15 +57,15 @@
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" >
-  <link rel="stylesheet" href="/css/hiero.css" >
-  <link rel="stylesheet" href="/css/glyphs.css" >
+  <link rel="stylesheet" href="./css/hiero.css" >
+  <link rel="stylesheet" href="./css/glyphs.css" >
   
-    <link rel="stylesheet" href="/css/vdonate.css" >
+    <link rel="stylesheet" href="./css/vdonate.css" >
   
 
   <!-- Custom CSS -->
   
-<link rel="stylesheet" href="/css/my.css">
+<link rel="stylesheet" href="./css/my.css">
 
   <!-- Google Adsense -->
   
@@ -88,12 +88,18 @@ var themeMenus = {};
 
   themeMenus["/study"] = "学习板块"; 
 
-  themeMenus["/ja"] = "社区板块"; 
+  themeMenus["/jp"] = "社区板块"; 
 
-  themeMenus["/"] = "活动"; 
+  themeMenus["/"] = "网站活动"; 
 
   themeMenus["/"] = "关于"; 
-
+  function jumurl(){
+    window.location.href = '/jp';
+  }
+            　　
+  function go(){
+    setTimeout(jumurl, 1000);
+  }  
 </script>
 
 
@@ -125,17 +131,25 @@ var themeMenus = {};
                     
                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/music">图文板块</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/study">学习板块</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/ja">社区板块</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">活动</a> 
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/study">学习板块</a> 
                         <div class="dropdown-content">
-                          <p>菜鸟教程</p>
-                          <p>www.runoob.com</p>
+                          <a href="/study">学习资源</a>
+			                    <a href="#">悬赏问答</a>
+                        </div>
                       </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">关于</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">社区板块</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">网站活动</a> 
+                        
+                      </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">关于</a> 
+                        <div class="dropdown-content">
+                          <a href="#">关于我</a>
+			                    <a href="#">关于网站</a>
+                        </div>
+                      </li>
                     
               </ul>
             </div>
@@ -145,7 +159,12 @@ var themeMenus = {};
       </div>
   </div>
 </header>
-
+<div class="change">
+  <span>中文</span><input type="checkbox" class="switch" onclick="go()"><span>日语</span>
+</div>
+<div style="position: absolute;top: 15px;left: 1400px;background: red;">
+<a href="https://accounts.douban.com/passport/login?source=book" style="color: white;font-size: 1.5em;" rel="nofollow">登录/注册</a>
+</div>
 
   <div id="originBgDiv" style="background: #fff; width: 100%;">
 
