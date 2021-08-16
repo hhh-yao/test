@@ -20,10 +20,10 @@ body {
 	line-height: 1.8;
 	background: #fff;
 	}
-	#siderbar{
-		position: relative;
-		left: 150px;
-	}
+.asidebar{
+	position: relative;
+	left: 150px;
+}	
 	.all {
 		position: absolute;
 		top: 120px;
@@ -136,7 +136,7 @@ height: 0;
 }
 .product-list .product {
 	box-shadow: 0 0 20px #00000070;
-width: 30%;
+width: 32%;
 padding: 0 15px;
 float: left;
 margin-left: 5px;
