@@ -20,10 +20,14 @@ body {
 	line-height: 1.8;
 	background: #fff;
 	}
+	#siderbar{
+		position: relative;
+		left: 150px;
+	}
 	.all {
 		position: absolute;
 		top: 120px;
-		left: 60px;
+		left: 660px;
 		float: right;
 		color: #666a6c;
 	  }
@@ -378,7 +382,7 @@ input[type="reset"],
 input[type="submit"] {
 	padding: 5px 15px;
 	color: #fff;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	font-weight: 400;
 	font-family: "Yanone Kaffeesatz", "方正姚体", Arial, Helvetica, sans-serif;
 	line-height: 30px;
