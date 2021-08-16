@@ -20,7 +20,11 @@ body {
 	line-height: 1.8;
 	background: #fff;
 	}
+.asidebar{
+	width:350px;
+	position: absolute;
 
+}
 	.unlist{
 		list-style-image: radial-gradient(50% 50%,orange,orange 60%,blue 60%,blue 95%,transparent);
 	}
@@ -64,9 +68,9 @@ body {
 	}
 
 	.all {
-		position: absolute;
-		top: 120px;
-		left: 660px;
+		position: relative;
+		top: -40px;
+		
 		float: right;
 		color: #666a6c;
 	  }
