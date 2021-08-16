@@ -179,7 +179,7 @@ var themeMenus = {};
         
           <section id="main">
   
-    <article id="post-lala"  class="article article-type-post" itemscope itemprop="blogPost" >
+   <!-- <article id="post-lala"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
     
@@ -229,14 +229,14 @@ dgffffdggggggggggggggggggggggggggggggggggggggggggggggggggggggg...
     </footer>
   </div>
   
-</article>
+</article>-->
 
 <!-- Table of Contents -->
 
     
 
   
-    <article id="post-uu"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <!--  <article id="post-uu"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
     
@@ -293,14 +293,14 @@ dgffffdggggggggggggggggggggggggggggggggggggggggggggggggggggggg...
     </footer>
   </div>
   
-</article>
+</article>-->
 
 <!-- Table of Contents -->
 
     
 
   
-    <article id="post-hello-world"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <!--  <article id="post-hello-world"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
     
@@ -349,27 +349,88 @@ dgffffdggggggggggggggggggggggggggggggggggggggggggggggggggggggg...
     </footer>
   </div>
   
-</article>
+</article>-->
 
 <!-- Table of Contents -->
+<div class="page" style="
+    position: relative;
+    /* position: absolute; */
+    width: 800px;
+    top: -100px;
+">
+						<section>
+							<header>
+								<h2 class="section-title" style="
+    font-size: 3em;
+">热门推荐</h2>
+								<a href="#" class="all">查看更多</a>
+							</header>
 
+							<div class="product-list">
+								<div class="product">
+									<div class="inner-product">
+										<div class="figure-image">
+											<a href="single.html"><img src="https://demo.themezy.com/system/resources/demo_themes/000/000/011//dummy/game-1@2x.jpg" alt="Game 1"></a>
+										</div>
+										<h3 class="product-title"><a href="#">Alpha Protocol</a></h3>
+										<small class="price">Title</small>
+										<p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor...</p>
+										<a href="cart.html" class="button" style="
+    background: green;
+">Add to cart</a>
+										<a href="#" class="button muted">Read Details</a>
+									</div>
+								</div> <!-- .product -->
+
+								<div class="product">
+									<div class="inner-product">
+										<div class="figure-image">
+											<a href="single.html"><img src="https://demo.themezy.com/system/resources/demo_themes/000/000/011//dummy/game-2@2x.jpg" alt="Game 2"></a>
+										</div>
+										<h3 class="product-title"><a href="#">Grand Theft Auto V</a></h3>
+										<small class="price">Title</small>
+										<p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor...</p>
+										<a href="cart.html" class="button" style="
+                    background: green;
+                ">Add to cart</a>
+										<a href="#" class="button muted">Read Details</a>
+									</div>
+								</div> <!-- .product -->
+
+								<div class="product">
+									<div class="inner-product">
+										<div class="figure-image">
+											<a href="single.html"><img src="https://demo.themezy.com/system/resources/demo_themes/000/000/011//dummy/game-4@2x.jpg" alt="Game 3"></a>
+										</div>
+										<h3 class="product-title"><a href="#">Need for Speed rivals</a></h3>
+										<small class="price">Title</small>
+										<p>Lorem ipsum dolor sit consectetur adipiscing elit do eiusmod tempor...</p>
+										<a href="cart.html" class="button" style="
+                    background: green;
+                ">Add to cart</a>
+										<a href="#" class="button muted">Read Details</a>
+									</div>
+								</div> <!-- .product -->
+
+								
+
+							</div> <!-- .product-list -->
+
+						</section>
+
+						
+    
+		  </div>
     
 
   
 
 
 
-{% block content %}
-  <section id="posts" class="posts-expand">
-    {% for post in page.posts %}  
-      {% if page.lang === post.lang %}
-        {{ post_template.render(post, true) }}
-      {% endif %}
-    {% endfor %}
-  </section>
-  {% include '_partials/pagination.swig' %}
-{% endblock %}</section>
-          <aside id="sidebar">
+
+
+</section>
+          <aside id="sidebar" style="position: relative;left: 150px;">
   
     <div class="widget-wrap" style="margin: 20px 0;">
 	<div id="search-form-wrap">
