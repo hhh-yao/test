@@ -20,6 +20,48 @@ body {
 	line-height: 1.8;
 	background: #fff;
 	}
+
+	.unlist{
+		list-style-image: radial-gradient(50% 50%,orange,orange 60%,blue 60%,blue 95%,transparent);
+	}
+	.list {
+		padding-bottom: 14px;
+		padding-left: 14px;
+		border-bottom: 1px dashed #e5e5e5;
+		position: relative;
+		margin-bottom: 15px;
+	}
+	.list-time{
+		margin-right: 6%;
+		padding-left: 5%;
+		
+		background: url(https://cdn.jsdelivr.net/gh/hhh-yao/hhh-yao.github.io@2.1/钟.svg) left center no-repeat;
+		display: inline-block;
+		color: #555;
+		font-size: 12px;
+		max-width: 47%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		height: 17px;
+	
+	
+	}
+	.list-local{
+	   
+		padding-left: 5%;
+		background: url(https://cdn.jsdelivr.net/gh/hhh-yao/hhh-yao.github.io@2.1/地标.svg) left center no-repeat;
+		display: inline-block;
+		color: #555;
+		font-size: 12px;
+		max-width: 47%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		height: 17px;
+	
+	
+	}
 .asidebar{
 	position: relative;
 	left: 150px;
